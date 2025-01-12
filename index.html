@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="ingredients.js"></script> <!-- External ingredients data -->
     <script src="productNames.js"></script> <!-- External products data -->
+    <script src="conditors.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <script src="script.js"></script>
@@ -19,8 +20,20 @@
         <img src="logo.png" alt="Logo" class="logo">
     </header>
     <h1>לה פטיסייר - מתכונים</h1>
-    
+    <ol class="DoneItems">מתכונים שמילאתי:</ol><br>
     <!-- Product Selection -->
+    <label for="conditors">שם הקונדיטור:</label>
+    
+    <select class="conditors" id="conditorsNames" style="width: 200px;">
+        <option value="choose">בחר את שמך</option>
+        <option value="ayala">איילה</option>
+        <option value="naava">נאוה</option>
+        <option value="nataly">נטלי</option>
+        <option value="neomi">נעמי</option>
+        <option value="michael">מיכאל</option>
+        <option value="shraif">שריף</option>
+    </select><br>
+
     <label for="productName">שם המוצר:</label>
     <select class="productName" id="productName" style="width: 200px;"></select><br>
 
