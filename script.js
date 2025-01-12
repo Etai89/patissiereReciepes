@@ -93,19 +93,17 @@ $(document).ready(() => {
             alert('אין מתכונים לסיים!');
             return;
         }
-
-
+    
         const reciepeName = $('.productName').select2('data')[0]?.text;
         if (reciepeName) {
             doneRecieps.push(reciepeName);
             localStorage.setItem('doneRecieps', JSON.stringify(doneRecieps));
-
+    
             // Append only the new recipe
             $('.DoneItems').append(`<li>${reciepeName} <img src="https://i.pinimg.com/736x/c9/0d/aa/c90daad8cb3b5a4f58ebf1594d8530fd.jpg"/></li>`);
         }
-        recipie = [];
-        $('.checked').empty();
-
+    
+        // Send the recipe array to the Make.com webhook
         $.ajax({
             url: 'https://hook.eu2.make.com/pgzu9bge32pnhdcw38lcf982bcd9fwwc',
             type: "POST",
@@ -113,7 +111,7 @@ $(document).ready(() => {
             data: JSON.stringify({ recipes: recipie }),
             success: () => {
                 $('.final').html(`<p>המתכון נשלח בהצלחה!</p>`);
-                recipie = [];
+                recipie = []; // Reset recipe array only after successful submission
                 $('.checked').empty();
             },
             error: (error) => {
@@ -121,5 +119,6 @@ $(document).ready(() => {
             }
         });
     });
+    
 
 });
