@@ -87,6 +87,12 @@ const conditors = {
         { id: 240, product: "גבינה פירורים" },
         { id: 241, product: "גבינה פירורים קטן" },
         { id: 242, product: "גבינה פירות יער"},
+        { id: 243, product: "בצק פריך חלבי"},
+        { id: 244, product: "בצק פריך פרווה"},
+        { id: 245, product: "בצק פריך חום פרווה"},
+        { id: 246, product: "בצק מזונות"},
+        { id: 247, product: "בצק פריקסה"},
+
 
     ],
     neomi: [
