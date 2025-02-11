@@ -85,7 +85,8 @@ const conditors = {
         { id: 129, product: "קיש פלפל פטה גדול" },
         { id: 130, product: "קיש פלפל פטה קטן" },
         { id: 240, product: "גבינה פירורים" },
-        { id: 130, product: "גבינה פירות יער"},
+        { id: 241, product: "גבינה פירורים קטן" },
+        { id: 242, product: "גבינה פירות יער"},
 
     ],
     neomi: [
