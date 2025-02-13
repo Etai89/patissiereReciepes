@@ -139,6 +139,8 @@ const conditors = {
         { id: 151, product: "בצק קרואסונים" },
         { id: 152, product: "בצק שמרים" },
         { id: 153, product: "בצק שמרים פרווה" },
+        { id: 154, product: "בצק בריוש" },
+
 
     ],
     newAdds: [
